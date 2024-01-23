@@ -13,7 +13,40 @@
 		DA61BCFE2B54F3B2008FF718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA61BCFC2B54F3B2008FF718 /* Main.storyboard */; };
 		DA61BD002B54F3B4008FF718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA61BCFF2B54F3B4008FF718 /* Assets.xcassets */; };
 		DA61BD032B54F3B4008FF718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA61BD012B54F3B4008FF718 /* LaunchScreen.storyboard */; };
+		DA61BD0B2B54F43C008FF718 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DA61BD0A2B54F43C008FF718 /* song1.mp3 */; };
+		DA61BD0D2B54F9A2008FF718 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61BD0C2B54F9A2008FF718 /* Service.swift */; };
+		DA61BD0F2B54FA57008FF718 /* MusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA61BD0E2B54FA57008FF718 /* MusicResponse.swift */; };
+		DA7DFA162B567CCD00A7124B /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7DFA152B567CCC00A7124B /* Intents.framework */; };
+		DA7DFA192B567CCD00A7124B /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DFA182B567CCD00A7124B /* IntentHandler.swift */; };
+		DA7DFA1D2B567CCD00A7124B /* helloWorldIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DA7DFA132B567CCC00A7124B /* helloWorldIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA7DFA222B567CF300A7124B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7DFA212B567CF300A7124B /* Intents.intentdefinition */; };
+		DA7DFA242B567F7500A7124B /* TemperatureIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7DFA232B567F7500A7124B /* TemperatureIntentHandler.swift */; };
+		DA7DFA252B56806400A7124B /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DA7DFA212B567CF300A7124B /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA7DFA1B2B567CCD00A7124B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA61BCEB2B54F3B2008FF718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA7DFA122B567CCC00A7124B;
+			remoteInfo = helloWorldIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA61BD382B55294A008FF718 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA7DFA1D2B567CCD00A7124B /* helloWorldIntents.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DA61BCF32B54F3B2008FF718 /* BackgroundAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +57,17 @@
 		DA61BCFF2B54F3B4008FF718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA61BD022B54F3B4008FF718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA61BD042B54F3B4008FF718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA61BD0A2B54F43C008FF718 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
+		DA61BD0C2B54F9A2008FF718 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DA61BD0E2B54FA57008FF718 /* MusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponse.swift; sourceTree = "<group>"; };
+		DA61BD102B551041008FF718 /* BackgroundAudioDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BackgroundAudioDebug.entitlements; sourceTree = "<group>"; };
+		DA61BD112B552137008FF718 /* BackgroundAudioRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BackgroundAudioRelease.entitlements; sourceTree = "<group>"; };
+		DA7DFA132B567CCC00A7124B /* helloWorldIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = helloWorldIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7DFA152B567CCC00A7124B /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		DA7DFA182B567CCD00A7124B /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		DA7DFA1A2B567CCD00A7124B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA7DFA212B567CF300A7124B /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		DA7DFA232B567F7500A7124B /* TemperatureIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +78,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA7DFA102B567CCC00A7124B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7DFA162B567CCD00A7124B /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				DA61BCF52B54F3B2008FF718 /* BackgroundAudio */,
+				DA7DFA172B567CCD00A7124B /* helloWorldIntents */,
+				DA7DFA142B567CCC00A7124B /* Frameworks */,
 				DA61BCF42B54F3B2008FF718 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				DA61BCF32B54F3B2008FF718 /* BackgroundAudio.app */,
+				DA7DFA132B567CCC00A7124B /* helloWorldIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +111,11 @@
 		DA61BCF52B54F3B2008FF718 /* BackgroundAudio */ = {
 			isa = PBXGroup;
 			children = (
+				DA61BD112B552137008FF718 /* BackgroundAudioRelease.entitlements */,
+				DA61BD102B551041008FF718 /* BackgroundAudioDebug.entitlements */,
+				DA61BD0E2B54FA57008FF718 /* MusicResponse.swift */,
+				DA61BD0C2B54F9A2008FF718 /* Service.swift */,
+				DA61BD0A2B54F43C008FF718 /* song1.mp3 */,
 				DA61BCF62B54F3B2008FF718 /* AppDelegate.swift */,
 				DA61BCF82B54F3B2008FF718 /* SceneDelegate.swift */,
 				DA61BCFA2B54F3B2008FF718 /* ViewController.swift */,
@@ -65,6 +125,25 @@
 				DA61BD042B54F3B4008FF718 /* Info.plist */,
 			);
 			path = BackgroundAudio;
+			sourceTree = "<group>";
+		};
+		DA7DFA142B567CCC00A7124B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DFA152B567CCC00A7124B /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7DFA172B567CCD00A7124B /* helloWorldIntents */ = {
+			isa = PBXGroup;
+			children = (
+				DA7DFA1A2B567CCD00A7124B /* Info.plist */,
+				DA7DFA182B567CCD00A7124B /* IntentHandler.swift */,
+				DA7DFA212B567CF300A7124B /* Intents.intentdefinition */,
+				DA7DFA232B567F7500A7124B /* TemperatureIntentHandler.swift */,
+			);
+			path = helloWorldIntents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +156,34 @@
 				DA61BCEF2B54F3B2008FF718 /* Sources */,
 				DA61BCF02B54F3B2008FF718 /* Frameworks */,
 				DA61BCF12B54F3B2008FF718 /* Resources */,
+				DA61BD382B55294A008FF718 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DA7DFA1C2B567CCD00A7124B /* PBXTargetDependency */,
 			);
 			name = BackgroundAudio;
 			productName = BackgroundAudio;
 			productReference = DA61BCF32B54F3B2008FF718 /* BackgroundAudio.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DA7DFA122B567CCC00A7124B /* helloWorldIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7DFA1E2B567CCD00A7124B /* Build configuration list for PBXNativeTarget "helloWorldIntents" */;
+			buildPhases = (
+				DA7DFA0F2B567CCC00A7124B /* Sources */,
+				DA7DFA102B567CCC00A7124B /* Frameworks */,
+				DA7DFA112B567CCC00A7124B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = helloWorldIntents;
+			productName = helloWorldIntents;
+			productReference = DA7DFA132B567CCC00A7124B /* helloWorldIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +196,9 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DA61BCF22B54F3B2008FF718 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					DA7DFA122B567CCC00A7124B = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -116,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				DA61BCF22B54F3B2008FF718 /* BackgroundAudio */,
+				DA7DFA122B567CCC00A7124B /* helloWorldIntents */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +230,14 @@
 				DA61BD032B54F3B4008FF718 /* LaunchScreen.storyboard in Resources */,
 				DA61BD002B54F3B4008FF718 /* Assets.xcassets in Resources */,
 				DA61BCFE2B54F3B2008FF718 /* Main.storyboard in Resources */,
+				DA61BD0B2B54F43C008FF718 /* song1.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7DFA112B567CCC00A7124B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,13 +248,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA7DFA252B56806400A7124B /* Intents.intentdefinition in Sources */,
 				DA61BCFB2B54F3B2008FF718 /* ViewController.swift in Sources */,
+				DA61BD0D2B54F9A2008FF718 /* Service.swift in Sources */,
 				DA61BCF72B54F3B2008FF718 /* AppDelegate.swift in Sources */,
 				DA61BCF92B54F3B2008FF718 /* SceneDelegate.swift in Sources */,
+				DA61BD0F2B54FA57008FF718 /* MusicResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA7DFA0F2B567CCC00A7124B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7DFA222B567CF300A7124B /* Intents.intentdefinition in Sources */,
+				DA7DFA242B567F7500A7124B /* TemperatureIntentHandler.swift in Sources */,
+				DA7DFA192B567CCD00A7124B /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA7DFA1C2B567CCD00A7124B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA7DFA122B567CCC00A7124B /* helloWorldIntents */;
+			targetProxy = DA7DFA1B2B567CCD00A7124B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA61BCFC2B54F3B2008FF718 /* Main.storyboard */ = {
@@ -288,24 +419,28 @@
 		DA61BD082B54F3B4008FF718 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BackgroundAudio/BackgroundAudioDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 63VV5L9HD7;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BackgroundAudio/Info.plist;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Use Siri";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangam.BackgroundAudio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.groomfy.order;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,25 +451,79 @@
 		DA61BD092B54F3B4008FF718 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BackgroundAudio/BackgroundAudioRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 63VV5L9HD7;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BackgroundAudio/Info.plist;
+				INFOPLIST_KEY_NSSiriUsageDescription = "Use Siri";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sangam.BackgroundAudio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.groomfy.order;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA7DFA1F2B567CCD00A7124B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = helloWorldIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = helloWorldIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.groomfy.order.helloWorldIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA7DFA202B567CCD00A7124B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = helloWorldIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = helloWorldIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.groomfy.order.helloWorldIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +547,15 @@
 			buildConfigurations = (
 				DA61BD082B54F3B4008FF718 /* Debug */,
 				DA61BD092B54F3B4008FF718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7DFA1E2B567CCD00A7124B /* Build configuration list for PBXNativeTarget "helloWorldIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7DFA1F2B567CCD00A7124B /* Debug */,
+				DA7DFA202B567CCD00A7124B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
